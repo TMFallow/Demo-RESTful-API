@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TfDZIxVgdEi0gywDuCeOaMSNxcNeFNCWxCZxgIFeml8=",
+  "Hash": "n0YxUwbBWZsXaM2/1MVm5U0fArlCj+pntMSfbEE2lBw=",
   "Source": "Web_Student",
   "BasePath": "_content/Web_Student",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\SourceTree\\Demo_Restful_API\\Web_Student\\Web_Student\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Web_Student.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\SourceTree\\Demo_Restful_API\\Web_Student\\Web_Student\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "Web_Student",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SourceTree\\Demo_Restful_API\\Web_Student\\Web_Student\\wwwroot\\",
+      "BasePath": "_content/Web_Student",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
       "Identity": "D:\\SourceTree\\Demo_Restful_API\\Web_Student\\Web_Student\\wwwroot\\css\\site.css",
