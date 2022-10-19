@@ -5,6 +5,8 @@ using Web_Student.Models;
 
 namespace Web_Student.Controllers
 {
+    //[Route("api/Student")]
+    //[ApiController]
     public class StudentController : Controller
     {
         private readonly IStudent_Service student_Service;
@@ -13,23 +15,19 @@ namespace Web_Student.Controllers
         {
             this.student_Service = student_Service;
         }
-
+        [Route("Index")]
         [HttpGet]
         public IActionResult Index()
         {
-            //List<StudentViewModel> model = new List<StudentViewModel>();
-            //student_Service.GetAllStudents().ToList().ForEach(t =>
-            //{
-            //    StudentViewModel student = new StudentViewModel
-            //    {
-            //        Name = t.Name,
-            //        Classroom = t.Classroom,
-            //        DateOfBirth = t.DateOfBirth,
-            //    };
-            //    model.Add(student);
-            //});
             var model = student_Service.GetAllStudents();
             return View(model);
+        }
+
+        [Route("StudentLists")]
+        [HttpGet]
+        public IEnumerable<Student> StudentLists()
+        {
+            return student_Service.GetAllStudents();
         }
 
         [HttpGet]

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
 using Teacher_Data;
 using Teacher_Service;
 using Web_Teacher.Models;
@@ -88,6 +89,30 @@ namespace Web_Teacher.Controllers
             Teacher std = teacher_Service.GetTeacher(Id);
             teacher_Service.Delete(std);
             return RedirectToAction("Index");
+        }
+
+        public async Task<ActionResult> StudentList()
+        {
+            TeacherViewModel model = new TeacherViewModel();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7200/");
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage response = await client.GetAsync("StudentLists");  //api/Student/
+                if (response.IsSuccessStatusCode)
+                {
+                    var details = response.Content.ReadAsAsync<IEnumerable<StudentViewModel>>().Result;
+
+                    return View(details);
+                    //return Ok(details);
+                }
+                else
+                {
+                    return View();
+                }
+            }
+            
         }
     }
 }
