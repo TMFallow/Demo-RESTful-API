@@ -6,7 +6,10 @@ using Web_Teacher.Models;
 
 namespace Web_Teacher.Controllers
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 40a68ba728c1ad69b89dd43657b96d7028453482
     public class TeacherController : Controller
     {
         private readonly ITeacher_Service teacher_Service;

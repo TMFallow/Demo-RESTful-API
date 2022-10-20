@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web_Teacher", "Web_Teacher\Web_Teacher.csproj", "{38186293-4FFC-4E48-ABD9-76F92EE72090}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teacher_Data", "Teacher_Data\Teacher_Data.csproj", "{127631DA-3B52-410F-B578-A75618F27153}"
@@ -10,6 +11,15 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teacher_Repo", "Teacher_Repo\Teacher_Repo.csproj", "{C754A15E-CC23-40E6-B9F3-6AE8F153E016}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teacher_Service", "Teacher_Service\Teacher_Service.csproj", "{38222631-6482-4493-9C4A-16D9B54E9BDD}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Teacher", "Web_Teacher\Web_Teacher.csproj", "{38186293-4FFC-4E48-ABD9-76F92EE72090}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teacher_Data", "Teacher_Data\Teacher_Data.csproj", "{127631DA-3B52-410F-B578-A75618F27153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teacher_Repo", "Teacher_Repo\Teacher_Repo.csproj", "{C754A15E-CC23-40E6-B9F3-6AE8F153E016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teacher_Service", "Teacher_Service\Teacher_Service.csproj", "{38222631-6482-4493-9C4A-16D9B54E9BDD}"
+>>>>>>> 40a68ba728c1ad69b89dd43657b96d7028453482
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

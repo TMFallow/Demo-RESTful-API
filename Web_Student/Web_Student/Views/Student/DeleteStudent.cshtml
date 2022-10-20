@@ -1,0 +1,35 @@
+﻿@model Student_Data.Student
+@{
+    ViewData["Title"] = "DeleteStudent";
+}
+
+<h1>DeleteStudent</h1>
+
+<form asp-action="DeleteStudent" role="form" method="post">
+    <div class="modal-body form-horizontal">
+        <div class="row">
+            <input asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="col-lg-3 col-sm-3 control-label"></label>
+                <div class="col-lg-6">
+                    <input asp-for="Name" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Classroom" class="col-lg-3 col-sm-3 control-label"></label>
+                <div class="col-lg-6">
+                    <input asp-for="Classroom" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfBirth" class="col-lg-3 col-sm-3 control-label"></label>
+                <div class="col-lg-6">
+                    <input asp-for="DateOfBirth" class="form-control" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width:150px">Delete Student</button>
+    <a asp-controller="Student" asp-action="Index" class="btn btn-secondary" style="width:150px">Back</a>
+</form>
+

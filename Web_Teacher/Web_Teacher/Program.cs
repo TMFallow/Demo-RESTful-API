@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Teacher_Repo;
 using Teacher_Service;
+<<<<<<< HEAD
 using Web_Teacher;
+=======
+>>>>>>> 40a68ba728c1ad69b89dd43657b96d7028453482
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,8 +19,11 @@ builder.Services.AddScoped(typeof(ITeacher_Repo<>), typeof(Teacher_Repo<>));
 
 builder.Services.AddTransient<ITeacher_Service, Teacher_Services>();
 
+<<<<<<< HEAD
 builder.WebHost.ConfigureServices(s => s.AddSingleton(builder)).ConfigureAppConfiguration(i => i.AddJsonFile(Path.Combine("configuration", "configuration.json"))).UseStartup<StartUp>();
 
+=======
+>>>>>>> 40a68ba728c1ad69b89dd43657b96d7028453482
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
